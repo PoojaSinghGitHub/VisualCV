@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <style>
-        .button {
-            align:center;
-  background-color: green;
-  border: none;
-  color: white;
-  padding: 25px 45px;
-  padding: top 500px; ;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;      
-  margin: auto;
-  width: 100%;
-  border:green;
-}
+        body {
+            margin: auto;
+        }
 
-        #container{
-            display: flex;               
-            flex-direction: row;           
-            flex-wrap: nowrap;             
+
+        .button {
+            text-align: center;
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 25px 45px;
+            padding: top 500px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: auto;
+            width: 100%;
+            border: green;
+        }
+
+
+        
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: space-between;
+        }
+
+        #lower-btn {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
         }
 
         div.gallery {
@@ -38,7 +52,20 @@
 
         div.gallery:hover {
             border: 1px solid #777;
-            width: 350px;
+            transform: translate(0px, 20px) rotate(0deg);
+            
+        }
+
+        div.shift-right:hover {
+            border: 1px solid #777;
+            transform: translate(30px, 20px) rotate(20deg);
+            
+        }
+
+        div.shift-left:hover {
+            border: 1px solid #777;
+            transform: translate(30px, 20px) rotate(340deg);
+            
         }
 
         div.gallery img {
@@ -56,28 +83,30 @@
 <body>
 
     <div id="container">
-    <div class="gallery">
-        <a >
-            <img src="./Template1.jpeg" alt="Forest" width="9000" height="1500">
-        </a>
-        <div class="desc">Student</div>
-    </div>
+        <div class="gallery shift-right">
+            <a>
+                <img src="./Template1.jpeg" alt="Forest" width="9000" height="1500">
+            </a>
+            <div class="desc">Student</div>
+        </div>
 
-    <div class="gallery">
-        <a >
-            <img src="./Template2.jpeg" alt="Northern Lights" width="9000" height="1500">
-        </a>
-        <div class="desc">Fresher</div>
-    </div>
+        <div class="gallery">
+            <a>
+                <img src="./Template2.jpeg" alt="Northern Lights" width="9000" height="1500">
+            </a>
+            <div class="desc">Fresher</div>
+        </div>
 
-    <div class="gallery">
-        <a >
-            <img src="./Template3.jpeg" alt="Mountains" width="9000" height="1500">
-        </a>
-        <div class="desc">Professional</div>
+        <div class="gallery shift-left">
+            <a>
+                <img src="./Template3.jpeg" alt="Mountains" width="9000" height="1500">
+            </a>
+            <div class="desc">Professional</div>
+        </div>
     </div>
+    <div id="lower-btn">
+        <input type="button" class="button" value="select a template to proceed">
     </div>
-    <input type="button" class="button" value="select a template to proceed">
 </body>
 
 </html>
