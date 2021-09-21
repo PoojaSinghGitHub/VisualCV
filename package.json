@@ -1,0 +1,29 @@
+{
+  "name": "visualcv",
+  "version": "1.0.0",
+  "description": "Generated visual CV from templates",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PoojaSinghGitHub/VisualCV.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javacript",
+    "Bootstrap",
+    "NodeJS"
+  ],
+  "author": "Pradeep Rajput <rajputpradeep13@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PoojaSinghGitHub/VisualCV/issues"
+  },
+  "homepage": "https://github.com/PoojaSinghGitHub/VisualCV#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
